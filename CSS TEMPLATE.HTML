@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+/* Style the header */
+header {
+  background-color:green;
+  padding: 10px;
+  text-align: left;
+  font-size: 15px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+div {
+  float: left;
+  width: 100%;
+  height: 100px; 
+  background: yellow;
+  border:2px solid black;
+  padding: 50px;
+}
+
+#location
+{
+width: 46px;
+  height: 44px;
+  background: url(img_navsprites.gif) 0 0;
+}
+#phone
+{
+width: 46px;
+  height: 44px;
+  background: url(img_navsprites.gif) 0 0;
+}
+
+#envelope
+{
+width: 46px;
+  height: 44px;
+  background: url(img_navsprites.gif) 0 0;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid black;
+} 
+input[type=submit] {
+  width: 30%;
+  background-color: yellow;
+  color: darkgreen;
+  padding: 10px ;
+  margin: left;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+ 
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 400px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+</style>
+</head>
+<body>
+
+
+
+<header>
+  <h1> Get in Touch</h1>
+<h4>Just drop us a line. We wll be glad to answer your enquiries.<h4>
+</header>
+<div class="row">
+  <div class="column" "office" style="background-color:white;">
+ <h2>Contact Information </h2>
+<img id="location" src="location.jpg" width="1" height="1">
+<p>No:-52, Alandur Road, Saidapet, Chennai - 600015 </p>
+  <img id="phone" src="phone.jpg" width="1" height="1">  <p>9488133457</p>
+
+   <img id="envelope" src="envelope.jpg" width="1" height="1"> <p>info@tuty.com </p>
+  </div>
+<form>
+  <div class="column" style="background-color:green;">
+<h2> Send us a Message</h2>
+ <label for="fname" >FIRST NAME*
+<input type ="text" name="fname">
+<label for="fname" > LAST NAME*</label>
+<input type ="text" name="fname">
+EMAIL ADDRESS*
+<input type="text" name="email"><br>
+<label>MESSAGE<label><br>
+<textarea cols="70" rows="3" value="address" required>  
+</textarea>
+ <input type="submit" value="submit"><b>
+</div>
+
+</body>
+</html>
+
